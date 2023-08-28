@@ -1,0 +1,131 @@
+.contact{
+    width: 100%;
+    height: 100%;
+}
+
+.contact_container{
+    padding-top:15%;
+}
+
+.contact_flex{
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+
+.contact1{
+    flex: 1;
+    padding: 0 5% 0 5%;
+}
+
+.contact1 h1{
+    color: #abab;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+}
+
+
+.contact1 h2{
+  font-size: 65px;
+  color: #000;
+  font-weight: 600;
+  margin-top:5%;
+  padding: 0 3% 0 0;
+}
+
+.contact1 p{
+   font-size: 18px;
+   color: #abab;
+   line-height: 2rem;
+   margin-top: 5%;
+  }
+
+  .contact_media{
+    margin-top: 5%;
+  }
+
+  .contact_media svg{
+    color: #000;
+    font-size: 25px;
+    margin: 0 20px 0 0;
+    transition: 0.4s;
+  }
+
+  .contact_media svg:hover{
+   color: #abab;
+   cursor: pointer;
+  }
+
+  .contact2{
+    flex-basis: 45%;
+  }
+
+  .contact2 form{
+    line-height: 5rem;
+  }
+
+  .contact2 input{
+    width: 100%;
+    padding: 10px;
+    border: transparent;
+    border-bottom: 3px solid #000;
+  }
+
+  .contact2 input::placeholder{
+    font-size: 15px;
+    color: #000;
+  }
+
+
+  .contact_map{
+    padding: 5%;
+  }
+
+  .contact_map iframe{
+    border-radius: 5px;
+  }
+
+  .contact2 input:focus{
+    background: #ccc;
+  }
+
+  .contact2 textarea{
+    width: 100%;
+    padding: 10px;
+    border: transparent;
+    border-bottom: 3px solid #000;
+  }
+
+  .contact2 textarea::placeholder{
+    font-size: 15px;
+    color: #000;
+  }
+
+  .contact2 button{
+    width: 100%;
+  }
+
+
+
+  /* =========== MEDIA QUARIES(medium and small screens) ========= */
+   @media screen and (max-width:1024px){
+      .contact_container{
+        padding-top:25%;
+      }
+
+    .contact_flex{
+        flex-direction: column;
+      }
+
+      .contact1{
+        text-align: center;
+      }
+      .contact1 h2{
+       font-size: 35px;
+      }
+   
+   }
+

@@ -1,0 +1,51 @@
+.section_header{
+    width: 300px;
+     padding: 3%;
+    height:170px;
+    position: absolute;
+    text-align: center;
+    background-color: #47ea4e;
+    vertical-align: baseline;
+    z-index: 98;
+}
+
+.section_header::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 170px 60px 0 0;
+    border-color: #47ea4e transparent transparent transparent;
+   position: absolute;
+    top:0;
+    right: 0;
+    transform: translateX(100%);
+}
+
+.section_header h1{
+    font-size: 22px;
+    line-height: 149%;
+    font-weight: 400;
+    word-break: break-word;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 3rem;
+}
+
+/*========== MEDIA QUARIES (small and medium screens) =========== */
+@media screen and (max-width:600px){
+    .section_header{
+        width: 150px;
+       height: 100px;
+      }
+
+      .section_header::after{ 
+        border-width: 100px 60px 0 0;
+    }
+
+    .section_header h1{
+       margin-top: 1rem;
+    }
+    
+}

@@ -1,0 +1,120 @@
+.price{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.price_container{ 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    text-align: left;
+    padding: 20% 6rem 0 6rem;
+}
+
+.price_row{
+    position: relative;
+    width: 300px;
+    height: 100%;
+    line-height: 3rem;
+    border: 2px solid black;
+    padding: 3rem;
+}
+
+.price_row h1{
+    font-size: 200px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: -1px 0 #b3b3b3, 0 1px #b3b3b3, 1px 0 #b3b3b3, 0 -1px #b3b3b3;
+    line-height: 100%;
+    margin-bottom: -10;
+    position: absolute;
+    top: -50px;
+    right: -9px;
+    z-index: 1;
+}
+
+.price_row h1:before {
+    content: "";
+    width: 150px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.price_row h2{
+    font-size: 25;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 100;
+}
+
+.price_row h4{
+   font-size: 6rem;
+   margin-top: 5rem;
+   color: #47ea4e;
+   font-weight: 700;
+   margin-bottom: 1.4rem;
+}
+
+.price_row small{
+    color: #b3b3b3;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+.sub{
+    position: relative;
+   text-align: center;
+   margin-top: 10%;
+   color: #000;
+}
+
+.sub P{
+    font-size: 18px;
+}
+
+.price_row .sub p.disabled{
+    color: #b3b3b3;
+}
+
+
+/*================ MEDIA QUARIES(medium screen) ==================== */
+
+@media screen and (max-width:1024px){
+    .price_container{
+        padding-top: 30%;
+       grid-template-columns:  repeat(1, 1fr);
+       grid-gap: 5rem;
+    }
+
+    .price_row{
+        width: 350px;
+    }
+    .sub{
+        text-align: left;
+    }
+
+   
+}
+
+
+/*================ MEDIA QUARIES(small screen) ==================== */
+
+@media screen and (max-width:600px){
+    .price_container{
+     width: 100%;
+    display: grid;
+    padding: 0; 
+    padding-top:10rem; 
+    }
+
+  .price_row{
+    width: 90%;
+   
+  }
+
+}

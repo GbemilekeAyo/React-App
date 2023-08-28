@@ -1,0 +1,93 @@
+.milestone{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: url(../Images/on_black_left.png);
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size: calc(100%, 100px);
+}
+
+.milestone_container{
+    position: relative;
+    color: #fff;
+     padding: 15% 5% 0 8%;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     gap: 10%;
+}
+
+
+.milestone_row{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6%;
+}
+
+
+.milestone_row span{
+    font-size: 80px;
+    line-height: 100%;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 0;
+    color: #000000;
+    text-shadow: -1px 0 #b3b3b3, 0 1px #b3b3b3, 1px 0 #b3b3b3, 0 -1px #b3b3b3;
+}
+.milestone_txt{
+    margin-left: 3%;
+}
+
+.milestone_txt h1{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 5%;
+}
+
+
+.milestone_txt p{
+    color: #b3b3b3;
+    font-size: 16px;
+    line-height: 1.7rem;
+}
+
+
+
+/* =================== MEDIA QUARIES(medium screens) =================== */
+
+@media screen and (max-width:1024px){
+     .milestone{
+        height: 100%;
+     }
+
+  .milestone_container{
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding-top: 23%;
+  }
+
+  .milestone_row{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .milestone_row span{
+    font-size: 55px;
+  }
+  
+}
+
+
+
+
+
+/* =================== MEDIA QUARIES(small screens) =================== */
+
+@media screen and (max-width:694px){
+    .milestone_txt h1{
+        font-size: 17px;
+        margin-top: 15px;
+    }
+ 
+}

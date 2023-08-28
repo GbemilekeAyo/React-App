@@ -1,0 +1,59 @@
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/hero_image_01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   background-position: center;
+}
+
+
+.mainheader_container{
+    width: 60%;
+   padding: 15%;
+   line-height: 5rem;
+   text-align: left;
+}
+
+.mainheader_container h4{
+    color: #fff;
+   font-size: 70px;
+   font-weight: 700;
+   
+}
+
+
+
+
+ /* =======  MEDIA QUARIES(Medium screens) ====== */
+
+ @media screen and (max-width:1024px){
+    .mainheader_container{
+        width: 100%;
+        text-align: center;
+        padding-top:12rem ;
+    }
+
+    .mainheader_link{
+        display: grid;
+        place-items: center;
+    }
+
+ }
+
+ /* =======  MEDIA QUARIES(smaller screens) ====== */
+
+ @media screen and (max-width:600px){
+    .mainheader_container{
+        width: 100%;
+        text-align: center;
+        line-height: 2.5rem;
+        padding-top: 18rem;
+    }
+
+    .mainheader_container h4{
+        font-size: 35px;
+    }
+   
+ }
+

@@ -1,0 +1,167 @@
+.client{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/quote_image_01.jpg);
+    background-position: center;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+
+.client_container{
+    width: 80%;
+    position: absolute;
+    background: #000;
+    transform: translateX(-50%, -50%);
+    top: 12vh;
+    left: 10%;
+    height: 80vh;
+}
+
+.client_inner-container{
+    padding:3.5rem;
+    text-align: left;
+}
+
+.client_quote{
+    font-size: 5.5rem;
+    color: #47ea4e;
+}
+
+.client_container p{
+    color: #b3b3b3;
+    font-size: 1.7rem;
+    line-height: 3rem;
+    margin-top: 1.5rem;
+}
+
+.client_flex{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client_txt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.client_txt img{
+   width: 60px;
+   border-radius: 50%;
+}
+
+.client_txt h2 {
+   color: #b3b3b3;
+   font-size: 20px;
+   font-weight: 100;
+   margin: 18px;
+ }
+
+ .client_txt small{
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+ }
+
+ .clients_btn-container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+   margin-top: 3rem;
+ }
+
+ .clients_btn{
+    background: transparent;
+    color: #fff;
+ }
+
+
+ .clients_btn svg{
+     fill: #47ea4e;
+    width: 3rem;
+    height: 3rem;
+}
+
+
+/* ======================  MEDIA QUARIES (medium screen) =======================*/
+
+@media screen and (max-width:1024px){
+   .client{
+    height:100vh;
+   }
+
+    .client_container{
+        width: 90%;
+        height: 80vh;
+        left: 5%;
+    }
+
+    .client_inner-container{
+        padding: 3rem;
+    }
+
+    .client_container p{
+        font-size:1.3rem;
+        line-height: 2.5rem;
+    }
+}
+
+
+
+   /* ======================  MEDIA QUARIES (small screen) =======================*/
+
+@media screen and (max-width:600px){
+       .client{
+        height:120vh;
+       }
+
+       .client_container{
+        height: 95vh;
+       }
+
+    .client_txt{
+        width: 100%;
+        display: block;
+        margin: 0;
+        text-align: left;
+        line-height: 1.7rem;
+    }
+     .client_txt img{
+        width: 45px;
+     }
+
+    .client_txt h2 ,small{
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .client_quote{
+        font-size: 40px;
+    }
+
+    .client_container p{
+        font-size:18px;
+      
+    }
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

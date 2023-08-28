@@ -1,0 +1,110 @@
+nav{
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.nav-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+   justify-content: space-between;
+  height: 100%;
+  background: #000;
+  padding: 15px;
+}
+
+.brand{
+  width: 70px;
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+
+.nav_menu li {
+  color: #fff;
+  font-size: 15px;
+}
+
+.nav_toggler div{
+  width: 2rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: darkgray;
+  transition: 0.4s ease-in;
+}
+
+.nav_toggler{
+  display: none;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width:1024px){
+   
+  .nav_toggler{
+    display: block;
+  }
+
+ 
+  .nav_menu{
+    position: fixed;
+    right: 0;
+    width: 70%;
+    top: 8vh;
+    height: 100vh;
+    background: #000;
+    display: block;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+    z-index: 999;
+  }
+
+  .nav-container{
+   height: 12vh;
+  }
+
+  .nav-container ul {
+  text-align: center;
+  line-height: 3.2rem;
+  }
+
+
+  .nav-container li{
+    font-size: 15px;
+
+    }
+  
+ 
+}
+
+
+/* ======== NAV ACTIVE CLASSS ===========*/
+
+.nav_active {
+  transform: translateX(0);
+  line-height: 0;
+}
+
+
+/* ====== ANIMATION   FOR NAV ICON =========== */
+.toggle .line1 {
+   transform: rotate(-50deg) translate(-9px, 10px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform:  rotate(50deg) translate(-4px, -5px);
+  
+}
+
+
+
